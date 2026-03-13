@@ -1,0 +1,4 @@
+const supabaseUrl = "https://lmdnxhiybjbdnfbwliwr.supabase.co"
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxtZG54aGl5YmpiZG5mYndsaXdyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMzOTU0OTUsImV4cCI6MjA4ODk3MTQ5NX0.NlICytYPQFhJwY47SjOOkVGVbJkz98R_Bix7FW1zZZ8"
+
+const supabaseClient = supabase.createClient(supabaseUrl, supabaseKey)

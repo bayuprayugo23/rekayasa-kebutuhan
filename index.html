@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Recommendation System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Job Recommendation System for Alumni</h1>
+<p>Temukan pekerjaan sesuai keahlianmu</p>
+</header>
+
+<div class="container">
+
+<section class="search-box">
+
+<h2>Profil Alumni</h2>
+
+<input type="text" id="nama" placeholder="Nama Alumni">
+
+<input type="text" id="prodi" placeholder="Program Studi">
+
+<input type="text" id="skill" placeholder="Skill (contoh: programmer)">
+
+<select id="lokasi">
+<option value="">Semua Lokasi</option>
+<option>Jakarta</option>
+<option>Bandung</option>
+<option>Surabaya</option>
+<option>Malang</option>
+<option>Yogyakarta</option>
+<option>Bali</option>
+<option>Semarang</option>
+<option>Medan</option>
+<option>Makassar</option>
+<option>Batam</option>
+</select>
+
+<button onclick="cariLowongan()">Cari Rekomendasi</button>
+
+</section>
+
+<section>
+
+<h2>Lowongan Rekomendasi</h2>
+
+<div id="jobList" class="job-container">
+<p>Silakan isi profil dan klik "Cari Rekomendasi"</p>
+</div>
+
+</section>
+
+</div>
+
+<!-- TAMBAHAN YANG DIPERLUKAN -->
+
+<!-- Library Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<!-- Koneksi ke Supabase -->
+<script src="supabase.js"></script>
+
+<!-- Script utama -->
+<script src="script.js"></script>
+
+</body>
+</html>
